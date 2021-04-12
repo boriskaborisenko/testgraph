@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: bsc
+    network: ropsten
     source:
       address: '0x56E75d45ea19fA96844C51994Ade3CFf65f3E209'
       abi: Factory
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: bsc
+    network: ropsten
     source:
       abi: Pair
     mapping:
