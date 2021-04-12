@@ -1,12 +1,12 @@
 specVersion: 0.0.2
 description: Nimbus is a decentralized protocol for automated token exchange on Ethereum.
-repository: https://github.com/nimbusplatformorg/nimbus-subgraph
+repository: https://github.com/boriskaborisenko/testgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: mainnet
+    network: bsc
     source:
       address: '0x56E75d45ea19fA96844C51994Ade3CFf65f3E209'
       abi: Factory
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: mainnet
+    network: bsc
     source:
       abi: Pair
     mapping:
