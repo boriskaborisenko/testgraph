@@ -1,12 +1,12 @@
 specVersion: 0.0.2
-description: (BSC testnet???) is a decentralized protocol for automated token exchange on Ethereum.
+description: (BSC mainnet) is a decentralized protocol for automated token exchange on Ethereum.
 repository: https://github.com/boriskaborisenko/testgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: bsc-testnet
+    network: bsc
     source:
       address: '0x05F6BB6b96ca657a3666d2f1bCA302b999a671b4'
       abi: Factory
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: bsc-testnet
+    network: bsc
     source:
       abi: Pair
     mapping:
