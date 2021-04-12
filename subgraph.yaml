@@ -1,16 +1,16 @@
 specVersion: 0.0.2
-description: Nimbus (BSC testnet) is a decentralized protocol for automated token exchange on Ethereum.
+description: (BSC testnet???) is a decentralized protocol for automated token exchange on Ethereum.
 repository: https://github.com/boriskaborisenko/testgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: bsc
+    network: bsc-testnet
     source:
       address: '0x05F6BB6b96ca657a3666d2f1bCA302b999a671b4'
       abi: Factory
-      startBlock: 300115
+      startBlock: 6499999
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: bsc
+    network: bsc-testnet
     source:
       abi: Pair
     mapping:
